@@ -1,0 +1,7 @@
+Transport Accident, 857206, 11751
+Self-harm, 33051, 2127
+Assault, 183492, 2658
+Injury without intent, 31942, 282
+Legal action or War, 2041, 117
+Unknow cause, 39704, 984
+Another, 1939847, 6365
