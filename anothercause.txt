@@ -3,7 +3,7 @@ Touching a mechanical strength of materials accident, 732979, 1165
 Touching a mechanical strength of animals or human accident, 521430, 363
 Drown accident, 7580, 1927
 Threats to breathing accident, 4757, 190
-Touching electrical,ray and temperature accident, 12868, 461
+Touching electrical ray and temperature accident, 12868, 461
 Touching smoke and flame accident, 7091, 70
 Touching heat accident, 23983, 76
 Touching poison from aminals or plants accident, 107681, 123
