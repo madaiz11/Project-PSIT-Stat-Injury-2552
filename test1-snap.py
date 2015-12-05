@@ -21,14 +21,20 @@ def test():
     #print(sore)
     for m in table:
         print(m[0], 'จำนวนผู้บาดเจ็บ:'+'%.2f'%((int(m[1])/sore)*100)+'%', 'จำนวนผู้ตาย:'+'%.2f'%((int(m[2])/death)*100)+'%')
-        dict_death_sore[m[0]] = '%.2f'%((int(m[2])/int(m[1]))*100)
+        dict_death_sore[m[0]] = float('%.2f'%((int(m[2])/int(m[1]))*100))
         check1 += float('%.2f'%((int(m[1])/sore)*100))
         check2 += float('%.2f'%((int(m[2])/death)*100))
         check3 += float('%.2f'%((int(m[2])/int(m[1]))*100))
-    list_case = list(dict_death_sore.values())
-    list_death_sore = list(dict_death_sore.keys())
+    list_case = list(dict_death_sore.keys())
+    list_death_sore = list(dict_death_sore.values())
+    list_death_sore.sort()
     #print(check1, check2)
     #อัตราการบาดเจ็บต่อการตาย
     print("จำนวนผู้บาดเจ็บ:"+str(sore) , "จำนวนคนตาย:"+str(death))
+    print("5 อันดับที่มีอัตราการตายมากที่สุด")
+    #print(list_death_sore)
+    for i in range(5):
+        for m in list_case:
+            if dict_death_sore[m] == list_death_sore[18-i]:
+                print(str(i+1)+'. '+m+':', str(list_death_sore[18-i])+'%')
 test()
-
